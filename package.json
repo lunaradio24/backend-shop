@@ -1,0 +1,22 @@
+{
+  "name": "backend-shop",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "format": "prettier --write *.js **/*.js",
+    "dev": "nodemon app.js",
+    "which": "which nodemon"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "joi": "^17.13.1",
+    "mongoose": "^8.3.5",
+    "nodemon": "^3.1.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5"
+  }
+}
