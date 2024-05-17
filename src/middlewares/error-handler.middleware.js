@@ -1,3 +1,5 @@
+import Response from '../schemas/response.schema.js';
+
 export default (err, req, res, next) => {
   // ValidationError (400)
   if (err.name === 'ValidationError') {
@@ -58,8 +60,9 @@ export default (err, req, res, next) => {
 
   // Console.error and Return
   console.error(err);
-  return res.status(err.status).json({
+  const errResponse = new Response({
     status: err.status,
     message: err.message,
   });
+  return res.status(err.status).json(errResponse);
 };
