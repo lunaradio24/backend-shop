@@ -4,11 +4,13 @@
 
 ## 기능 (Features)
 
-- 상품 생성 (C)
-- 상품 목록 조회 (R)
-- 상품 상세 조회 (R)
-- 상품 수정 (U)
-- 상품 삭제 (D)
+| 설명               | METHOD |           URL |
+| ------------------ | :----: | ------------: |
+| 상품 생성 (C)      |  POST  |     /products |
+| 상품 목록 조회 (R) |  GET   |     /products |
+| 상품 상세 조회 (R) |  GET   | /products/:id |
+| 상품 수정 (U)      |  PUT   | /products/:id |
+| 상품 삭제 (D)      | DELETE | /products/:id |
 
 ## 설치 방법 (Installation)
 
